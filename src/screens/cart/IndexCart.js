@@ -15,15 +15,29 @@ const IndexCart = (navigation) => {
  
     return (
         <View style={ styles.container}>
+            <View style={styles.containerList}>
             <FlatList 
                 data={CartJson}
                 renderItem={renderItem}
                 style={styles.containerList}
                 keyExtractor={item => item.id.toString()}
             />
+            </View>
+            <View style={styles.footer}>
+                <TouchableOpacity
+                    style={styles.textButtonConfirm}
+                    onPress={()=> null}
+                >            
+                    <Text style={styles.textButtonConfirm}>Confirmar</Text>
+                    <View style={styles.totalContainer}>
+                        <Text style={ styles.totalTitle}>Total: </Text>
+                        <Text style={styles.total}> $ {total}</Text>
+                    </View>
+                </TouchableOpacity>
+            </View>
         </View>
         
   )
-}
+};
 
 export default IndexCart;
