@@ -1,14 +1,30 @@
-import { Text, View } from 'react-native'
 
+import { Colors } from '../constants/themes/Colors';
+import { IndexCart } from '../screens';
 import React from 'react'
-import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
+import { createNativeStackNavigator } from "@react-navigation/native-stack";
 
+const Stack = createNativeStackNavigator();
 const CardNavigator = () => {
   return (
-    <View>
-      <Text>CardNavigator</Text>
-    </View>
+    <Stack.Navigator
+      initialRouteName='Cart'
+      screenOptions={{
+        headerStyle: {
+          backgroundColor: isAndroid ? Colors.primary : Colors.secondary,
+        },
+        headerTintColor: Colors.text,
+        headerTitleStyle: {
+          fontFamily: 'Play-Regular'
+        }
+      }}
+      >
+        <Stack.Screen 
+          name: 'Cart'
+          component: { IndexCart }
+        />
+      </Stack.Navigator>
   )
 }
 
-export default CardNavigator
+export default CardNavigator;
