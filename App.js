@@ -1,21 +1,18 @@
-import { StyleSheet, Text, View } from 'react-native';
-
-import { StatusBar } from 'expo-status-bar';
+import { ActivityIndicator } from 'react-native';
+import CardNavigator from './src/navigation/CardNavigator';
+import React from 'react';
+import { useFonts } from 'expo-font';
 
 export default function App() {
-  return (
-    <View style={styles.container}>
-      <Text>app tienda</Text>
-      <StatusBar style="auto" />
-    </View>
+  const [loaded] = useFonts ({
+    'Play-Regular': require('./assets/fonts/PlayfairDisplay-Regular.ttf'),
+
+  });
+  if(!loaded){
+    return <ActivityIndicator />
+  }
+  return(
+    <CardNavigator />
+
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
