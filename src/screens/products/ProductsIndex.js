@@ -1,20 +1,21 @@
-import { Text, View } from 'react-native';
-
+import { FlatList } from 'react-native';
+import { IndexProductItem } from '../../components/IndexComp';
 import React from 'react';
-import { products } from '../../constants/data/ProductsJson';
-import { styles } from './ProductsStyles';
+import { styles } from './ProductsStyle';
 
 const ProductsIndex = ({navigation, route}) => {
-    const { productId } = route.params;
-    const product = products.find(product => product.id === productId);
-  return (
-    <View style={ styles.container}>
-      <Text>id: {product.id}</Text>
-      <Text>{product.title}</Text>
-      <Text>{product.description}</Text>
-      <Text>{product.price}</Text>
-      <Text>weight: {product.weight}</Text>
-    </View>
+  const { categoryId } = route.params;
+  const productsFiltered = products.filter( product => product.categoryId === categoryId);
+  const onSelected = ( item ) => {
+    navigation.navigate('Product', { name: item.title, productId: item.id});
+  };
+  const renderItem = ( {item}) => <IndexProductItem item = { item } onSelected= {onSelected} />
+    return (
+        <FlatList
+            data={productsFiltered}
+            renderItem= { renderItem}
+            keyExtractor= { item => item.id.toString()}
+        />
   )
 };
 
