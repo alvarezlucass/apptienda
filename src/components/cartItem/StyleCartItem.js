@@ -1,4 +1,4 @@
-import { Colors } from "../../constants/themes/Colors";
+import { Colors } from "../../constants/themes/IndexColors";
 import { StyleSheet } from "react-native.";
 
 export const styles = StyleSheet.create({
@@ -26,7 +26,7 @@ export const styles = StyleSheet.create({
     },
     title: {
         fontSize: 16,
-        fontFamily: 'bold',
+        fontFamily: 'Play-Regular',
         color: Colors.text,
         marginBotton: 5,
     },
@@ -42,13 +42,13 @@ export const styles = StyleSheet.create({
     },
     quantity:{
         fontSize: 14,
-        fontFamily: 'bold',
+        fontFamily: 'Play-Regular',
         color: Colors.text,
         marginBotton: 5,
     },
     price: {
         fontSize: 14,
         color: Colors.text,
-        fontFamily: 'bold'
+        fontFamily: 'Play-Regular'
     },
 })

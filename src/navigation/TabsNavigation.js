@@ -1,10 +1,12 @@
 import CardNavigator from "./CardNavigator";
 import { Colors } from "../constants/themes/IndexColors";
 import { Ionicons } from "@expo/vector-icons";
+import OrdersNavigator from "./OrdersNavigator";
 import React from 'react';
+import ShopNavigator from "./ShopNavigator";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 
-const BottonTab = createBottomTabNavigator();
+const BottomTab = createBottomTabNavigator();
 
 const TabsNavigation = () => {
     return (
@@ -14,7 +16,7 @@ const TabsNavigation = () => {
                 headerShown: false,
                 tabBarLabelStyle: {
                     fontFamily: 'Lato-Bold',
-                    color: colors.primary,
+                    color: Colors.primary,
                 }
             }}
         >
@@ -27,7 +29,7 @@ const TabsNavigation = () => {
                         <Ionicons 
                             name={focused ? 'home' : "home-outline"}
                             size={22}
-                            color={colors.primary}
+                            color={Colors.primary}
                         />
                     ),
                 }}
@@ -41,21 +43,21 @@ const TabsNavigation = () => {
                         <Ionicons 
                             name={focused ? 'file-tray-full' : "file-tray-full-outline"}
                             size={22}
-                            color={colors.primary}
+                            color={Colors.primary}
                         />
                     )
                 }}
             />
             <BottomTab.Screen
                 name="CartTab"
-                component={CartNavigator}
+                component={CardNavigator}
                 options={{
                     title: 'Cart',
                     tabBarIcon: ({ focused }) => (
                         <Ionicons 
                             name={focused ? 'cart' : 'cart-outline'}
                             size={22}
-                            color={colors.primary}
+                            color={Colors.primary}
                         />
                     )
                 }}
@@ -63,9 +65,8 @@ const TabsNavigation = () => {
             />
         </BottomTab.Navigator>
     )
-}
-    </BottonTab.CardNavigator>
-  )
+
+  
 }
 
-export default TabsNavigation
+export default TabsNavigation;

@@ -28,6 +28,6 @@ export const styles = StyleSheet.create({
     },
     total: {
         fontSize: 16,
-        fontFamily: 'bold',
+        fontFamily: 'Play-Regular',
     },
 });

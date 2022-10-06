@@ -1,8 +1,8 @@
 import { FlatList, Text, TouchableOpacity, View } from 'react-native'
 
-import { CartJson } from '../../constants/data';
+import { CartJson } from '../../constants/data/IndexData';
 import IndexCartItem from '../../components/cartItem/IndexCartItem';
-import React from 'react'
+import React from 'react';
 import { styles } from './StyleCart';
 
 const IndexCart = (navigation) => {
@@ -25,7 +25,7 @@ const IndexCart = (navigation) => {
             </View>
             <View style={styles.footer}>
                 <TouchableOpacity
-                    style={styles.textButtonConfirm}
+                    style={styles.buttonConfirm}
                     onPress={()=> null}
                 >            
                     <Text style={styles.textButtonConfirm}>Confirmar</Text>

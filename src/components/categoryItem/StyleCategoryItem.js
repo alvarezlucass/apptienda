@@ -21,7 +21,7 @@ export const styles= StyleSheet.create({
         padding: 10,
     },
     title: {
-        fontFamily: 'bold',
+        fontFamily: 'Play-Regular',
         fontSize: 20,
     }
 });

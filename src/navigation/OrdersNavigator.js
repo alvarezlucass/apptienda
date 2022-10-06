@@ -1,9 +1,10 @@
-import { Colors } from '../constants/themes/Colors';
+import { Colors } from '../constants/themes/IndexColors';
 import { IndexOrder } from '../screens/IndexScreens';
 import React from 'react';
-import { StackActions } from '@react-navigation/native';
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
-import { isAndroid } from '../utils';
+import { isAndroid } from '../utils/UtilsIndex';
+
+const Stack = createNativeStackNavigator();
 
 const OrdersNavigator = () => {
   return (

@@ -1,9 +1,9 @@
-import { IndexCategories, ProductIndex, ProductsIndex } from '../screens';
-import { Text, View } from 'react-native';
+import { IndexCategories, ProductIndex, ProductsIndex } from '../screens/IndexScreens';
 
 import {Colors} from '../constants/themes/IndexColors';
 import React from 'react'
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
+import { isAndroid } from '../utils/UtilsIndex';
 
 const Stack = createNativeStackNavigator();
 
@@ -25,7 +25,7 @@ const ShopNavigator = () => {
             name='Categories'
             component={IndexCategories}
             options={{
-                title='Categories',
+                title:'Categories',
             }}
          />
          <Stack.Screen

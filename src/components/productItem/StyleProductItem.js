@@ -16,11 +16,11 @@ export const styles = StyleSheet.create({
         justifyContent: 'space-between',
     },
     title: {
-        fontFamily: 'bold',
+        fontFamily: 'Play-Regular',
         fontSize: 18,
     },
     price: {
-        fontFamily: 'bold',
+        fontFamily: 'Play-Regular',
         fontSize: 16,
     },
     detailContainer: {
@@ -28,7 +28,7 @@ export const styles = StyleSheet.create({
         justifyContent: 'space-between',
     },
     detail: {
-        fontFamily: 'bold',
+        fontFamily: 'Play-Regular',
         fontSize: 14,
     },
 });

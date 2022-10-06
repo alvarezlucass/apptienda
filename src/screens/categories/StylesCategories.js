@@ -11,6 +11,6 @@ export const styles = StyleSheet.create({
         flex: 1,
     },
     title: {
-        fontFamily: 'bold'
+        fontFamily: 'Play-Regular'
     }
 })

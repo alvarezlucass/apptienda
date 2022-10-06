@@ -27,7 +27,7 @@ export const styles = StyleSheet.create({
         alignItems: 'center',
     },
     textButtonConfirm:{
-        fontFamily: 'bold',
+        fontFamily: 'Play-Regular',
         fontSize: 14,
     },
     totalContainer:{
@@ -37,11 +37,11 @@ export const styles = StyleSheet.create({
         justifyContent: 'space-between',
     },
     totalTitle: {
-        fontFamily: 'bold',
+        fontFamily: 'Play-Regular',
         fontSize: 14,
     },
     total:{
-        fontFamily: 'bold',
+        fontFamily: 'Play-Regular',
         fontSize: 16,
     },
 });
