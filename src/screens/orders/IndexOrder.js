@@ -1,6 +1,6 @@
 import { FlatList, View } from 'react-native';
 
-import IndexOrderItem from '../../components/IndexComp';
+import IndexOrderItem from '../../components/orderItem/IndexOrderItem';
 import React from 'react';
 import { orders } from '../../constants/data/IndexData';
 import { styles } from './StylesOrder';
