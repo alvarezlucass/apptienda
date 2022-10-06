@@ -8,14 +8,14 @@ import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 
 const BottomTab = createBottomTabNavigator();
 
-const TabsNavigation = () => {
+const TabsNavigation= () => {
     return (
         <BottomTab.Navigator
             initialRouteName="ShopTab"
             screenOptions={{
                 headerShown: false,
                 tabBarLabelStyle: {
-                    fontFamily: 'Lato-Bold',
+                    fontFamily: 'Play-Regular',
                     color: Colors.primary,
                 }
             }}

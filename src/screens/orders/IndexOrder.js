@@ -1,8 +1,8 @@
-import { FlatList, Text, View } from 'react-native';
+import { FlatList, View } from 'react-native';
 
 import IndexOrderItem from '../../components/IndexComp';
 import React from 'react';
-import { orders } from '../../constants/data/OrdersJson';
+import { orders } from '../../constants/data/IndexData';
 import { styles } from './StylesOrder';
 
 const IndexOrder = (navigation) => {

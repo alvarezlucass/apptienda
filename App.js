@@ -1,5 +1,5 @@
 import { ActivityIndicator } from 'react-native';
-import CardNavigator from './src/navigation/CardNavigator';
+import CardNavigator from './src/navigation/AppNavigator';
 import React from 'react';
 import { useFonts } from 'expo-font';
 
@@ -9,7 +9,7 @@ export default function App() {
 
   });
   if(!loaded){
-    return <ActivityIndicator />
+    return <ActivityIndicator />;
   }
   return(
     <CardNavigator />

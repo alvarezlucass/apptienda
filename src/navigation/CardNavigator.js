@@ -5,6 +5,7 @@ import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import { isAndroid } from '../utils/UtilsIndex';
 
 const Stack = createNativeStackNavigator();
+
 const CardNavigator = () => {
   return (
     <Stack.Navigator

@@ -1,6 +1,5 @@
-import { Button, FlatList, Text, View } from 'react-native';
-
 import { CategoriesJson } from '../../constants/data/IndexData'
+import { FlatList } from 'react-native';
 import IndexCategoryItem from '../../components/IndexComp';
 import React from 'react';
 import { styles } from './StylesCategories';
