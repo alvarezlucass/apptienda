@@ -1,11 +1,12 @@
 import { FlatList } from 'react-native';
 import { IndexProductItem } from '../../components/IndexComp';
+import { ProductsJson } from '../../constants/data/ProductsJson';
 import React from 'react';
 import { styles } from './ProductsStyle';
 
 const ProductsIndex = ({navigation, route}) => {
   const { categoryId } = route.params;
-  const productsFiltered = products.filter( product => product.categoryId === categoryId);
+  const productsFiltered = ProductsJson.filter( product => product.categoryId === categoryId);
   const onSelected = ( item ) => {
     navigation.navigate('Product', { name: item.title, productId: item.id});
   };
