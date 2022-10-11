@@ -1,8 +1,8 @@
 import { FlatList, View } from 'react-native';
 
 import IndexOrderItem from '../../components/orderItem/IndexOrderItem';
+import {OrdersJson} from '../../constants/data/OrdersJson';
 import React from 'react';
-import { orders } from '../../constants/data/IndexData';
 import { styles } from './StylesOrder';
 
 const IndexOrder = (navigation) => {
@@ -13,7 +13,7 @@ const IndexOrder = (navigation) => {
   return (
     <View style={styles.container}>
         <FlatList
-            data={orders}
+            data={OrdersJson}
             renderItem={renderItem}
             keyExtractor= { item => item.id.toString()}
         />
