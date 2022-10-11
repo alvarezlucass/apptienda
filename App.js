@@ -1,6 +1,8 @@
 import { ActivityIndicator } from 'react-native';
-import CardNavigator from './src/navigation/AppNavigator';
+import AppNavigator from './src/navigation/AppNavigator';
+// import { Provider } from 'react-redux';
 import React from 'react';
+// import store from './src/store';
 import { useFonts } from 'expo-font';
 
 export default function App() {
@@ -12,7 +14,11 @@ export default function App() {
     return <ActivityIndicator />;
   }
   return(
-    <CardNavigator />
+    // <Provider store={store}>
+    //   <AppNavigator />
+    // </Provider>
+    <AppNavigator />
+
 
   );
 }

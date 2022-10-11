@@ -1,4 +1,4 @@
-import { IndexCategories, ProductIndex, ProductsIndex } from '../screens/IndexScreens';
+import { Categories, Product, Products } from '../screens/IndexScreens';
 
 import {Colors} from '../constants/themes/IndexColors';
 import React from 'react'
@@ -23,21 +23,21 @@ const ShopNavigator = () => {
     >
         <Stack.Screen
             name='Categories'
-            component={IndexCategories}
+            component={Categories}
             options={{
                 title:'Categories',
             }}
          />
          <Stack.Screen
             name='Products'
-            component={ProductsIndex}
+            component={Products}
             options={({route}) => ({
                 title: route.params.name,
             })}
          />
          <Stack.Screen 
             name='Product'
-            component={ProductIndex}
+            component={Product}
             options= {({route}) => ({
                 title: route.params.name,
             })}

@@ -1,14 +1,14 @@
 import { CategoriesJson } from '../../constants/data/IndexData'
+import CategoryItem from '../../components/categoryItem/IndexCategoryItem';
 import { FlatList } from 'react-native';
-import IndexCategoryItem from '../../components/categoryItem/IndexCategoryItem';
 import React from 'react';
 import { styles } from './StylesCategories';
 
-const IndexCategories = ({navigation, route}) => {
+const Categories = ({navigation, route}) => {
     const onSelected = (item) => {
         navigation.navigate('Products', { name: item.title, category: item.id});        
     }
-    const renderItem = ({item}) => <IndexCategoryItem item={item} onSelected={onSelected} />
+    const renderItem = ({item}) => <CategoryItem item={item} onSelected={onSelected} />
   return (
     <FlatList
         data={CategoriesJson}
@@ -19,4 +19,4 @@ const IndexCategories = ({navigation, route}) => {
   )
 };
 
-export default IndexCategories;
+export default Categories;

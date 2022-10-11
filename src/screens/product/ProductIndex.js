@@ -4,7 +4,7 @@ import { ProductsJson } from '../../constants/data/ProductsJson';
 import React from 'react';
 import { styles } from './ProductStyles';
 
-const ProductIndex = ({navigation, route}) => {
+const Product = ({navigation, route}) => {
     const { productId } = route.params;
     const product = ProductsJson.find(product => product.id === productId);
   return (
@@ -18,4 +18,4 @@ const ProductIndex = ({navigation, route}) => {
   )
 };
 
-export default ProductIndex;
+export default Product;

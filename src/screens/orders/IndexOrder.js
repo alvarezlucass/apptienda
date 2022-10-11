@@ -1,15 +1,15 @@
 import { FlatList, View } from 'react-native';
 
-import IndexOrderItem from '../../components/orderItem/IndexOrderItem';
+import OrderItem from '../../components/orderItem/IndexOrderItem';
 import {OrdersJson} from '../../constants/data/OrdersJson';
 import React from 'react';
 import { styles } from './StylesOrder';
 
-const IndexOrder = (navigation) => {
+const Order = (navigation) => {
     const onCancel = (id) => {
         console.warn(id);
     }
-    const renderItem = ({item }) => <IndexOrderItem item={item} onCancel={onCancel} />
+    const renderItem = ({item }) => <OrderItem item={item} onCancel={onCancel} />
   return (
     <View style={styles.container}>
         <FlatList
@@ -21,4 +21,4 @@ const IndexOrder = (navigation) => {
   )
 };
 
-export default IndexOrder;
+export default Order;

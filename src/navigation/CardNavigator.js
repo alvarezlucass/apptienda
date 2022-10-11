@@ -1,5 +1,5 @@
+import { Cart } from '../screens/IndexScreens';
 import { Colors } from '../constants/themes/IndexColors';
-import { IndexCart } from '../screens/IndexScreens';
 import React from 'react'
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import { isAndroid } from '../utils/UtilsIndex';
@@ -22,7 +22,7 @@ const CardNavigator = () => {
       >
         <Stack.Screen 
           name= 'Cart'
-          component={ IndexCart }
+          component={ Cart }
         />
       </Stack.Navigator>
   )

@@ -1,5 +1,5 @@
 import { Colors } from '../constants/themes/IndexColors';
-import { IndexOrder } from '../screens/IndexScreens';
+import { Order } from '../screens/IndexScreens';
 import React from 'react';
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import { isAndroid } from '../utils/UtilsIndex';
@@ -22,7 +22,7 @@ const OrdersNavigator = () => {
     >
         <Stack.Screen 
             name='Orders'
-            component={IndexOrder}
+            component={Order}
         />
         
     </Stack.Navigator>

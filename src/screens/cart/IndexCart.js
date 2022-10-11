@@ -1,17 +1,17 @@
 import { FlatList, Text, TouchableOpacity, View } from 'react-native'
 
+import CartItem from '../../components/cartItem/IndexCartItem';
 import { CartJson } from '../../constants/data/IndexData';
-import IndexCartItem from '../../components/cartItem/IndexCartItem';
 import React from 'react';
 import { styles } from './StyleCart';
 
-const IndexCart = (navigation) => {
+const Cart = (navigation) => {
     const total = 1400;
     
     const onDelete = (id) =>{
         console.warn(id);
     }
-    const renderItem = ({item}) => <IndexCartItem item={item} onDelete={onDelete} />
+    const renderItem = ({item}) => <CartItem item={item} onDelete={onDelete} />
  
     return (
         <View style={ styles.container}>
@@ -40,4 +40,4 @@ const IndexCart = (navigation) => {
   )
 };
 
-export default IndexCart;
+export default Cart;
