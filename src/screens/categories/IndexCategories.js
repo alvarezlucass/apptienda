@@ -1,10 +1,11 @@
 import CategoryItem from '../../components/categoryItem/IndexCategoryItem';
 import { FlatList } from 'react-native';
 import React from 'react';
-import { categories } from '../../constants/data/IndexData'
 import { styles } from './StylesCategories';
+import { useSelector } from 'react-redux';
 
 const Categories = ({navigation, route}) => {
+    const categories = useSelector((state) => state.category.categories);
     const onSelected = (item) => {
         navigation.navigate('Products', { name: item.title, category: item.id});        
     }

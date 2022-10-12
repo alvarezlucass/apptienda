@@ -3,7 +3,7 @@ import { combineReducers, createStore } from "redux";
 
 const rootReducer = combineReducers({
     products: ProductsReducers,
-    categories: CategoryReducers,
+    category: CategoryReducers,
 });
 
 export default createStore(rootReducer);

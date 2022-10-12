@@ -1,7 +1,7 @@
-import { ProductsJson } from '../../constants/data/ProductsJson';
+import { products } from '../../constants/data/ProductsJson';
 
 const initialState = {
-    products: ProductsJson,
+    products: products,
     filteredProducts: [],
     selected: null,
 }
