@@ -1,4 +1,4 @@
-import { CategoryReducers, ProductsReducers } from './reducers';
+import { CategoryReducers, ProductsReducers } from './reducers/IndexReduce';
 import { combineReducers, createStore } from "redux";
 
 const rootReducer = combineReducers({

@@ -1,5 +1,4 @@
 import { ProductsJson } from '../../constants/data/ProductsJson';
-import React from 'react';
 
 const initialState = {
     products: ProductsJson,
@@ -7,8 +6,8 @@ const initialState = {
     selected: null,
 }
 
-const ProductsReducers = (state= initialState, action) => {
-  return state
+const ProductsReducers = (state = initialState, action) => {
+  return state;
 }
 
 export default ProductsReducers;

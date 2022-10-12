@@ -3,7 +3,7 @@ import { Text, TouchableOpacity, View } from 'react-native';
 import React from 'react';
 import { styles } from './StyleProductItem';
 
-const IndexProductItem = ({item, onSelected}) => {
+const ProductItem = ({item, onSelected}) => {
   return (
     <View style={ styles.container}>
         <TouchableOpacity style={styles.item} onPress= {() => onSelected(item)}>
@@ -17,4 +17,4 @@ const IndexProductItem = ({item, onSelected}) => {
   )
 }
 
-export default IndexProductItem;
+export default ProductItem;

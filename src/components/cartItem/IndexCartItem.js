@@ -5,7 +5,7 @@ import { Ionicons } from '@expo/vector-icons';
 import React from 'react';
 import { styles } from './StyleCartItem';
 
-const IndexCartItem = ({item, onDelete}) => {
+const CartItem = ({item, onDelete}) => {
   return (
     <View style={styles.container}>
         <View style={styles.headerContainer}>
@@ -24,4 +24,4 @@ const IndexCartItem = ({item, onDelete}) => {
   )
 }
 
-export default IndexCartItem;
+export default CartItem;

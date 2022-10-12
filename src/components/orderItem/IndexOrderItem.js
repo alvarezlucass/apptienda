@@ -9,7 +9,7 @@ const formDate = (time) => {
     const date= new Date(time);
     return date.toLocaleDateString();
 }
-const IndexOrderItem = ({item, onCancel}) => {
+const OrderItem = ({item, onCancel}) => {
   return (
     <View style={ styles.container}>
         <View style= { styles.headerContainer}>
@@ -32,4 +32,4 @@ const IndexOrderItem = ({item, onCancel}) => {
   )
 }
 
-export default IndexOrderItem;
+export default OrderItem;

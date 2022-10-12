@@ -1,5 +1,4 @@
-import { CategoriesJson } from '../../constants/data/IndexData';
-import React from 'react';
+import { CategoriesJson } from '../../constants/data/CategoriesJson';
 
 const initialState ={
   categories: CategoriesJson,  

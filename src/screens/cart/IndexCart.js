@@ -1,7 +1,6 @@
 import { FlatList, Text, TouchableOpacity, View } from 'react-native'
 
-import CartItem from '../../components/cartItem/IndexCartItem';
-import { CartJson } from '../../constants/data/IndexData';
+import CartItem from '../../components/IndexComp';
 import React from 'react';
 import { styles } from './StyleCart';
 
@@ -17,7 +16,7 @@ const Cart = (navigation) => {
         <View style={ styles.container}>
             <View style={styles.containerList}>
             <FlatList 
-                data={CartJson}
+                data={items}
                 renderItem={renderItem}
                 style={styles.containerList}
                 keyExtractor={item => item.id.toString()}
