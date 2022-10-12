@@ -1,4 +1,4 @@
-export const OrdersJson = [
+export const orders = [
     {
       id: 1,
       date: 1605898400000,

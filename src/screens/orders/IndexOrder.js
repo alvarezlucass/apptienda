@@ -3,8 +3,11 @@ import { FlatList, View } from 'react-native';
 import OrderItem from '../../components/IndexComp';
 import React from 'react';
 import { styles } from './StylesOrder';
+import { useSelector } from 'react-redux';
 
 const Order = (navigation) => {
+  const orders = useSelector(state => state.orders.list);
+  
     const onCancel = (id) => {
         console.warn(id);
     }
@@ -12,7 +15,7 @@ const Order = (navigation) => {
   return (
     <View style={styles.container}>
         <FlatList
-            data={OrdersJson}
+            data={orders}
             renderItem={renderItem}
             keyExtractor= { item => item.id.toString()}
         />

@@ -1,7 +1,7 @@
-import { CategoriesJson } from '../../constants/data/IndexData'
 import CategoryItem from '../../components/categoryItem/IndexCategoryItem';
 import { FlatList } from 'react-native';
 import React from 'react';
+import { categories } from '../../constants/data/IndexData'
 import { styles } from './StylesCategories';
 
 const Categories = ({navigation, route}) => {
@@ -11,7 +11,7 @@ const Categories = ({navigation, route}) => {
     const renderItem = ({item}) => <CategoryItem item={item} onSelected={onSelected} />
   return (
     <FlatList
-        data={CategoriesJson}
+        data={categories}
         renderItem={renderItem}
         keyExtractor= {item => item.id.toString()}
         style={styles.containerList}

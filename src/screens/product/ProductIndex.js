@@ -1,12 +1,12 @@
 import { Text, View } from 'react-native';
 
-import { ProductsJson } from '../../constants/data/ProductsJson';
 import React from 'react';
+import { products } from '../../constants/data/ProductsJson';
 import { styles } from './ProductStyles';
 
 const Product = ({navigation, route}) => {
     const { productId } = route.params;
-    const product = ProductsJson.find(product => product.id === productId);
+    const product = products.find(product => product.id === productId);
   return (
     <View style={ styles.container}>
       <Text>id: {product.id}</Text>

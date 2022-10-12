@@ -1,4 +1,4 @@
-export const CartJson = [
+export const cart = [
     {
       id: 1,
       category: 1,
