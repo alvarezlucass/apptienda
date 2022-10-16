@@ -15,6 +15,6 @@ const ProductItem = ({item, onSelected}) => {
         </TouchableOpacity>
     </View>
   )
-}
+};
 
 export default ProductItem;
