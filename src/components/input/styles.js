@@ -19,6 +19,6 @@ export const styles = StyleSheet.create({
     helperText: {
         fontSize: 12,
         fontFamily: 'Play-Regular',
-        color: #ff0000,
+        color: '#ff0000',
     }
 });

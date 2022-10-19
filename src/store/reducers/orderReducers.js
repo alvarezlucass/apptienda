@@ -8,7 +8,7 @@ const initialState = {
 
 const orderReducers = (state = initialState, action) => {
     switch (action.type) {
-        case GET_ORDERS;
+        case GET_ORDERS:
         return {
             ...state,
             list: action.orders,

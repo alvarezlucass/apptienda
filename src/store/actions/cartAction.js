@@ -1,4 +1,4 @@
-import { URL_API } from '../../constants/data/firebase/Firebase';
+import { URL_API } from '../../constants/firebase/Firebase';
 import { cartTypes } from '../types/IndexTypes';
 
 const { ADD_TO_CART, REMOVE_FROM_CART, CONFIRM_ORDER } = cartTypes;
