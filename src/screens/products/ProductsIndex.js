@@ -11,7 +11,7 @@ const Products = ({navigation}) => {
   
   const selectedCategory = useSelector((state) => state.category.selected)
 
-  const productsFiltered = useSelector( (state) => state.products.filteredProducts);
+  const productsFiltered = useSelector((state) => state.products.filteredProducts);
   
   useEffect(()=> {
     dispatch(filteredProducts(selectedCategory.id))
